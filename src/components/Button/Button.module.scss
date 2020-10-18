@@ -1,0 +1,24 @@
+@import '../../styles/main.scss';
+
+.morpheus-button {
+  $blur: 8px;
+
+  appearance: none;
+  border: 0;
+  border-radius: $space-s;
+  cursor: pointer;
+  padding: $space-m $space-m;
+  font-size: $font-s;
+  font-weight: 800;
+  background: #ededed;
+  box-shadow: 5px 5px $blur #cecece, -5px -5px $blur #ffffff;
+  transition: all 0.3s ease-in-out;
+
+  &--toggled {
+    box-shadow:  inset 5px 5px $blur #d9d9d9, inset -5px -5px $blur #ffffff;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}
